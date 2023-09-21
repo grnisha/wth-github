@@ -65,7 +65,7 @@ namespace RazorPagesTestSample.Pages
 
             if (Messages.Count == 0)
             {
-                MessageAnalysisResult = "There are no messages to analyse.";
+                MessageAnalysisResult = "There are no messages to analyze.";
             }
             else
             {
