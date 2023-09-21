@@ -57,7 +57,7 @@ namespace RazorPagesTestSample.Pages
             await _db.DeleteMessageAsync(id);
 
             return RedirectToPage();
-        
+        }
 
         public async Task<IActionResult> OnPostAnalyzeMessagesAsync()
         {
