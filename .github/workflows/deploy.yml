@@ -23,5 +23,5 @@ jobs:
       with:
         subscriptionId: ${{ vars.AZURE_SUBSCRIPTION_ID }}
         resourceGroupName: ${{ vars.AZURE_RG }}
-        template: ./InfrastructureAsCode/main.bicep
+        template: ./ARM-Templates/main.bicep
         parameters: environment=${{ env.targetEnv }}
