@@ -1,10 +1,10 @@
 name: CI
 
 env:
-  registryName: 6lprljcghp7aawthreg.azurecr.io
-  repositoryName: wth/razorcore
-  dockerfilePath: Application/src/RazorPagesTestSample
-  tag: ${{github.run_number}}
+    registryName: 6lprljcghp7aawthreg.azurecr.io
+    repositoryName: wth/dotnetcoreapp
+    dockerFolderPath: ./Application/src/RazorPagesTestSample
+    tag: ${{github.run_number}}
 
 on:
   push:
@@ -12,6 +12,12 @@ on:
     paths:
     - 'Application/**'
     - '.github/workflows/ci.yml'
+  pull_request:
+    branches: [ "main" ]
+    paths: 
+    - 'Application/**'
+    - '.github/workflows/ci.yml'
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
       
 jobs:
