@@ -20,8 +20,7 @@ namespace RazorPagesTestSample.Tests
                 .BuildServiceProvider();
 
             // Create a new options instance using an in-memory database and 
-            // IServiceProvider that the context should resolve all of its 
-            // services from.
+            // IServiceProvider that the context should resolve all of its ervices from.
             var builder = new DbContextOptionsBuilder<AppDbContext>()
                 .UseInMemoryDatabase("InMemoryDb")
                 .UseInternalServiceProvider(serviceProvider);
